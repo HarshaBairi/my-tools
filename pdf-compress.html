@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en" data-site="Variuno Tools">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Compress and upscale PDFs | Variuno Tools</title>
+<meta name="description" content="Compress a PDF to your file-size limit or render pages at higher resolution. Your files stay on your device.">
+<link rel="icon" type="image/svg+xml" href="assets/variuno-mark.svg">
+<link rel="stylesheet" href="assets/style.css"><link rel="stylesheet" href="assets/theme.css">
+</head>
+<body class="tool-page">
+<div class="site-head">
+  <div class="in">
+    <a class="brand" href="index.html" aria-label="Variuno Tools home"><img class="brand-logo" src="assets/variuno-logo.svg" alt=""></a>
+    <nav class="nav" aria-label="Main navigation"><a href="index.html">Home</a><a href="index.html#toolbox">All tools</a><a href="index.html#exam-picker">Exam &amp; forms</a><a href="privacy.html">Privacy</a></nav>
+  </div>
+</div>
+<header class="page-hero">
+  <div class="page-hero-inner">
+    <div>
+      <p class="eyebrow"><span class="eyebrow-dot"></span> PDF TOOL</p>
+      <h1>Compress and upscale a PDF.</h1>
+      <p class="sub">Set a file-size limit, choose standard or higher-resolution rendering, and preview the result.</p>
+    </div>
+    <div class="page-hero-art pdf-art" aria-hidden="true">
+      <span class="hero-file-large pdf-file-large">PDF</span>
+      <span class="compression-arrow">↓</span>
+      <span class="hero-file-small">KB</span>
+      <span class="hero-art-caption">COMPRESS +<br>HIGHER RESOLUTION</span>
+    </div>
+  </div>
+</header>
+<main class="tool-main pdf-main">
+  <div class="notice">
+    <span class="notice-symbol" aria-hidden="true">i</span>
+    <span><b>About PDF processing.</b> Pages are flattened into images, so text is no longer selectable. Higher-resolution rendering can sharpen vector text, but cannot restore detail missing from a low-resolution scan. Check the preview before uploading.</span>
+  </div>
+
+  <div class="pdf-grid">
+    <section class="card step-card">
+      <div class="step-heading">
+        <span class="step-number">01</span>
+        <span><span class="eyebrow">SOURCE FILE</span><h2>Choose your PDF</h2></span>
+      </div>
+      <label for="file">Select a file from your device</label>
+      <input id="file" type="file" accept="application/pdf,.pdf">
+      <p class="spec" id="fileinfo">Your document stays on this device.</p>
+      <div class="privacy-note"><span class="privacy-check">✓</span><span><b>Private processing</b><small>Your PDF is not uploaded.</small></span></div>
+    </section>
+
+    <section class="card step-card">
+      <div class="step-heading">
+        <span class="step-number">02</span>
+        <span><span class="eyebrow">FILE SIZE</span><h2>Set the limit</h2></span>
+      </div>
+      <label>Choose a common limit</label>
+      <div class="row preset-buttons">
+        <button class="ghost" type="button" data-kb="100">100 KB</button>
+        <button class="ghost" type="button" data-kb="200">200 KB</button>
+        <button class="ghost" type="button" data-kb="300">300 KB</button>
+        <button class="ghost" type="button" data-kb="500">500 KB</button>
+        <button class="ghost" type="button" data-kb="1024">1 MB</button>
+      </div>
+      <div class="grid size-grid">
+        <div><label for="minKB">Minimum (KB)</label><input id="minKB" type="number" min="0"  value="0"></div>
+        <div><label for="maxKB">Maximum (KB)</label><input id="maxKB" type="number" min="1"  value="200"></div>
+      </div>
+      <p class="spec">If your form has no minimum, leave it at 0 KB.</p>
+    </section>
+
+    <section class="card step-card compress-card">
+      <div class="step-heading">
+        <span class="step-number">03</span>
+        <span><span class="eyebrow">COMPRESS &amp; UPSCALE</span><h2>Optimize your PDF</h2></span>
+      </div>
+      <div class="resolution-control">
+        <label for="resolution">Page resolution</label>
+        <select id="resolution">
+          <option value="standard">Standard</option>
+          <option value="upscale">Upscale · custom DPI</option>
+        </select>
+        <div class="grid resolution-dpi" id="dpiControl"><div><label for="targetDpi">Target DPI</label><input id="targetDpi" type="number" min="36" step="1" value="250"></div></div>
+        <p class="spec" id="resolutionHint">Standard mode aims for a smaller file. Large PDFs may take several minutes; progress updates as pages are processed.</p>
+      </div>
+      <button id="go" type="button" disabled>Create optimized PDF <span aria-hidden="true">→</span></button>
+      <progress id="prog" class="hidden" max="1" value="0"></progress>
+      <div id="status" class="msg" aria-live="polite"></div>
+      <div id="out" class="hidden result-output">
+        <p id="result" class="msg ok"></p>
+        <p class="spec" id="hint"></p>
+        <div class="stage"><img id="prev" alt="Preview of page 1"></div>
+        <div class="row"><a id="dl" class="btn" download>Download PDF <span aria-hidden="true">↓</span></a></div>
+      </div>
+    </section>
+  </div>
+</main>
+<footer class="site-footer tool-footer">
+  <span>Variuno Tools <span class="footer-dot">·</span> Your PDF stays on your device</span>
+  <span>Not affiliated with any exam conducting body. Always follow the official notification.</span>
+<span class="foot-links"><a href="about.html">About</a><a href="privacy.html">Privacy</a><a href="contact.html">Contact</a></span></footer>
+<script src="vendor/pdf-lib.min.js"></script>
+<script type="module" src="assets/pdf-compress.js"></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en" data-site="Variuno Tools">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Free online image, PDF, document and daily tools | Variuno Tools</title>
+<meta name="description" content="Free, private browser tools to prepare images, PDFs, documents and everyday files. Resize, compress, convert and organize files on your device.">
+<link rel="icon" type="image/svg+xml" href="assets/variuno-mark.svg">
+<link rel="stylesheet" href="assets/style.css"><link rel="stylesheet" href="assets/theme.css">
+</head>
+<body class="home-page">
+<div class="site-head"><div class="in">
+  <a class="brand" href="index.html" aria-label="Variuno Tools home"><img class="brand-logo" src="assets/variuno-logo.svg" alt=""></a>
+  <nav class="nav" aria-label="Main navigation">
+    <a href="#toolbox">All tools</a><a href="application-prep.html">Application guide</a><a href="#how-it-works">How it works</a>
+  </nav>
+</div></div>
+<header class="wide home-hero">
+  <div class="hero-copy">
+    <h1>Everyday file tools, free and private.</h1>
+    <p class="sub">Resize, compress, convert and prepare files. Everything runs on your device, so nothing is uploaded and no account is needed.</p>
+    <div class="hero-search"><label class="sr-only" for="toolSearch">Search tools</label><input id="toolSearch" type="search" placeholder="Search tools, e.g. compress PDF" autocomplete="off"></div>
+    <p class="hero-links"><a href="#exam-picker">Applying for an exam? Check form sizes</a></p>
+  </div>
+  </header>
+<div class="wide notice launch-note hidden" id="launchNote"><span class="notice-symbol" aria-hidden="true">i</span><span><b>Limited file preview:</b> PDF rendering, OCR, password protection and some media tools require a secure HTTPS website. If you opened this downloaded folder directly, use the hosted website for those tools.</span></div>
+<main class="wide">
+  <section class="tools-section" id="toolbox">
+    <div class="section-heading"><div><p class="eyebrow">THE TOOL LIBRARY</p><h2>What would you like to do?</h2><p>Search by task or browse by category. Each tool explains its requirements, output format and processing time.</p></div><span class="section-count" id="catalogCount">Loading tools</span></div>
+    <div class="catalog-controls">
+      <div class="category-filters" id="categoryFilters" aria-label="Filter tools by category"></div>
+    </div>
+    <section class="quick-access hidden" id="quickAccess" aria-label="Saved and recently opened tools">
+      <div class="quick-access-heading"><div><p class="eyebrow">YOUR SHORTCUTS</p><h3>Pick up where you left off</h3></div><button class="ghost small hidden" id="clearRecent" type="button">Clear recent tools</button></div>
+      <div class="quick-access-grid">
+        <section class="quick-tools-panel hidden" id="recentPanel" aria-labelledby="recentHeading"><h4 id="recentHeading">Recently opened</h4><div class="quick-tool-list" id="recentTools"></div></section>
+        <section class="quick-tools-panel hidden" id="savedPanel" aria-labelledby="savedHeading"><h4 id="savedHeading">Saved tools</h4><div class="quick-tool-list" id="savedTools"></div></section>
+      </div>
+      <p class="spec" id="quickStatus" aria-live="polite">Shortcuts are stored in this browser on this device.</p>
+    </section>
+    <div id="toolCatalog" class="catalog-groups"></div>
+    <p id="noTools" class="empty-search hidden">No tools match that search. Try a different word or choose another category.</p>
+  </section>
+  <section class="card exam-card" id="exam-picker">
+    <div class="exam-intro"><p class="eyebrow">EXAM &amp; APPLICATION TOOLS</p><h2>Prepare one application, step by step</h2><p>Choose the exact exam or service. Prepare or review each listed item, mark your progress, then use the final checks before submitting. Official portal instructions always control.</p></div>
+    <div class="exam-control"><label for="exam">Select an exam or application</label><select id="exam"></select><div id="checklist" class="checklist"></div></div>
+  </section>
+  <section class="how-section" id="how-it-works">
+    <div><p class="eyebrow">SIMPLE &amp; TRANSPARENT</p><h2>Use tools with confidence</h2><p>Every tool is labeled by what it does and how it handles your files.</p></div>
+    <div class="how-grid">
+      <article><span>01</span><h3>Choose a tool</h3><p>Available tools work now. Choose a task and review the input, format and any processing-time guidance before downloading.</p></article>
+      <article><span>02</span><h3>Keep control of your files</h3><p>Available tools process locally in your browser. Some optional features may need to download a processing model; your file itself stays on your device.</p></article>
+      <article><span>03</span><h3>Review before sharing</h3><p>Always inspect output quality and follow the file requirements from your official form or service.</p></article>
+    </div>
+  </section>
+  <section class="faq-section" id="privacy">
+    <p class="eyebrow">HELP &amp; PRIVACY</p><h2>Good to know</h2>
+    <details><summary>Are the tools free?</summary><p>Yes. The goal is to keep the core utilities free to use without an account.</p></details>
+    <details><summary>Do you upload my files?</summary><p>Available tools process files in your browser. Optional models or libraries may download to your device, but that is separate from uploading your file. Each tool explains its own behavior.</p></details>
+    <details><summary>Can I use output for official applications?</summary><p>Check the preview and compare dimensions, file size, format, and other rules with the latest official notification before you submit.</p></details>
+  </section>
+</main>
+<footer class="wide site-footer"><span>Variuno Tools <span class="footer-dot">·</span> Free tools for files and everyday tasks</span><span>Check official requirements before submitting application files.</span><span class="foot-links"><a href="about.html">About</a><a href="privacy.html">Privacy</a><a href="contact.html">Contact</a></span></footer>
+<script src="assets/site-config.js"></script><script src="assets/presets.js"></script><script src="assets/home.js"></script><script src="assets/tools-data.js"></script><script src="assets/tool-catalog.js"></script>
+<script>(function(){var h=location.hostname,n=document.getElementById("launchNote");if(n&&(location.protocol==="file:"||h==="127.0.0.1"||h==="localhost"))n.classList.remove("hidden")})();</script>
+<script>(function(){var i=document.getElementById("toolSearch"),d=false;if(i)i.addEventListener("input",function(){if(!d&&i.value.trim()){d=true;document.getElementById("toolbox").scrollIntoView({behavior:matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth"})}})})();</script>
+</body></html>
+

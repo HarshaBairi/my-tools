@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en" data-site="Variuno Tools">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Application photo, signature and document preparer | Variuno Tools</title>
+<meta name="description" content="Prepare form photos, signatures, thumb impressions and handwritten scans at the file size your current application asks for.">
+<link rel="icon" type="image/svg+xml" href="assets/variuno-mark.svg">
+<link rel="stylesheet" href="assets/style.css"><link rel="stylesheet" href="assets/theme.css">
+</head>
+<body class="tool-page">
+<div class="site-head">
+  <div class="in">
+    <a class="brand" href="index.html" aria-label="Variuno Tools home"><img class="brand-logo" src="assets/variuno-logo.svg" alt=""></a>
+    <nav class="nav" aria-label="Main navigation"><a href="index.html">Home</a><a href="index.html#toolbox">All tools</a><a href="application-prep.html">Application guide</a><a href="privacy.html">Privacy</a></nav>
+  </div>
+</div>
+<header class="page-hero">
+  <div class="page-hero-inner">
+    <div>
+      <p class="eyebrow"><span class="eyebrow-dot"></span> IMAGE TOOL</p>
+      <h1>Application image preparer</h1>
+      <p class="sub">Resize, crop and compress a photo, your own signature, a thumb impression or a handwritten scan. Your image stays on this device.</p>
+    </div>
+    <div class="page-hero-art" aria-hidden="true">
+      <span class="hero-file-large">IMG</span>
+      <span class="hero-file-small">↗</span>
+      <span class="hero-art-caption">FORM-READY<br>IN A FEW STEPS</span>
+    </div>
+  </div>
+</header>
+<main class="tool-main photo-main">
+  <div class="notice">
+    <span class="notice-symbol" aria-hidden="true">!</span>
+    <span><b>Check the official notification.</b> Exam rules can change each year. Compare the preset with your form; if they differ, choose “Custom size” and enter the official numbers.</span>
+  </div>
+
+  <div class="photo-grid">
+    <section class="card step-card">
+      <div class="step-heading">
+        <span class="step-number">01</span>
+        <span><span class="eyebrow">REQUIREMENTS</span><h2>Choose your specifications</h2></span>
+      </div>
+      <label for="preset">Exam, application or custom size</label>
+      <select id="preset"></select>
+      <div id="custom" class="grid hidden custom-grid">
+        <div class="full-field"><label for="ctype">This image is a</label>
+          <select id="ctype"><option value="photo">Photo</option><option value="sign">Signature</option><option value="document">Document, thumb or handwriting</option></select></div>
+        <div><label for="cw">Width (px)</label><input id="cw" type="number" min="1" value="200"></div>
+        <div><label for="ch">Height (px)</label><input id="ch" type="number" min="1" value="230"></div>
+        <div><label for="cmin">Min size (KB)</label><input id="cmin" type="number" min="0"  value="20"></div>
+        <div><label for="cmax">Max size (KB)</label><input id="cmax" type="number" min="1"  value="50"></div>
+      </div>
+      <div id="spec" class="spec spec-panel"></div>
+    </section>
+
+    <section class="card step-card">
+      <div class="step-heading">
+        <span class="step-number">02</span>
+        <span><span class="eyebrow">YOUR IMAGE</span><h2>Upload and refine</h2></span>
+      </div>
+      <label for="file">Choose an image, signature or scan</label>
+      <input id="file" type="file" accept="image/*">
+      <p class="spec" id="tip">Choose a clear image from your device.</p>
+      <div id="wbRow" class="hidden background-option">
+        <label class="chk" for="wb"><input type="checkbox" id="wb"> Make the background white</label>
+        <p class="spec">Some exams need a plain white background. Processing happens in your browser; check the result because hair edges can look rough.</p>
+        <p class="spec warning-text" id="wbNote"></p>
+      </div>
+      <div class="privacy-note"><span class="privacy-check">✓</span><span><b>Private processing</b><small>Your image is not uploaded.</small></span></div>
+    </section>
+
+    <section class="card step-card result-card hidden" id="resultCard">
+      <div class="step-heading">
+        <span class="step-number">03</span>
+        <span><span class="eyebrow">PREVIEW</span><h2>Your file is ready</h2></span>
+      </div>
+      <div id="msg" class="msg" aria-live="polite"></div>
+      <div class="stage"><img id="result" alt="Your resized image"></div>
+      <div class="row"><a id="dl" class="btn" download>Download image <span aria-hidden="true">↓</span></a></div>
+      <details id="adj">
+        <summary>Adjust the framing</summary>
+        <div class="stage"><canvas id="cv"></canvas></div>
+        <label for="zoom">Zoom</label>
+        <input id="zoom" type="range" min="0.3" max="4" step="0.01" value="1">
+        <div class="row">
+          <button class="ghost" id="auto" type="button">Auto frame</button>
+          <button class="ghost" id="fit" type="button">Fit whole image</button>
+        </div>
+        <p class="spec">Drag the picture to move it. Your file updates automatically.</p>
+      </details>
+    </section>
+  </div>
+</main>
+<footer class="site-footer tool-footer">
+  <span>Variuno Tools <span class="footer-dot">·</span> Your image stays on your device</span>
+  <span>Not affiliated with any exam conducting body. Always follow the current official notice.</span>
+<span class="foot-links"><a href="about.html">About</a><a href="privacy.html">Privacy</a><a href="contact.html">Contact</a></span></footer>
+<script src="assets/presets.js"></script>
+<script src="assets/photo.js"></script>
+</body>
+</html>

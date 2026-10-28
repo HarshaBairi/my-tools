@@ -1,0 +1,18 @@
+Variuno Tools includes the following open-source browser libraries.
+
+Bundled:
+- PDF-Lib 1.17.x — MIT. License: ../LICENSE-pdf-lib.txt
+- PDF.js — Apache-2.0. License: ../pdfjs/LICENSE
+- JSZip 3.10.2 — MIT or GPL-3.0-or-later. See licenses/JSZip-MIT.txt
+- qrcode-generator 2.0.4 — MIT. See licenses/qrcode-generator-MIT.txt
+- Mammoth 1.13.0 — BSD-2-Clause. See licenses/Mammoth-BSD-2-Clause.txt
+- SheetJS Community Edition 0.20.3 — Apache-2.0. See licenses/SheetJS-Apache-2.0.txt
+- Tesseract.js 7.0.0 — Apache-2.0. See licenses/Tesseract.js-Apache-2.0.txt
+- QPDF 12.x engine — Apache-2.0. See licenses/QPDF-Apache-2.0.txt
+- @neslinesli93/qpdf-wasm 0.3.0 wrapper — ISC.
+
+Loaded only when needed from their public CDNs:
+- MediaPipe Tasks Vision 0.10.14 and the selfie segmentation model — Apache-2.0.
+- Tesseract.js Core and language data — Apache-2.0.
+
+These libraries are used for local browser processing. The selected image, document or media file is not uploaded to the library providers. This notice does not change the licenses under which the third-party software is distributed.
