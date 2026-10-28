@@ -6,4 +6,6 @@ README.md
 **/.git/**
 **/.github
 **/.github/**
+**/.wrangler
+**/.wrangler/**
 qa-phone-sample.jpg
