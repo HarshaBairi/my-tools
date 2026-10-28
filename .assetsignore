@@ -1,3 +1,9 @@
 wrangler.jsonc
-.github/
+.assetsignore
+.gitignore
+README.md
+**/.git
+**/.git/**
+**/.github
+**/.github/**
 qa-phone-sample.jpg
