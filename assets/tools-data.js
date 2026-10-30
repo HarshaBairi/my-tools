@@ -62,7 +62,7 @@ const TOOL_CATALOG=[
 "title": "Resize or compress an image",
 "detail": "Set exact width, height and a maximum size in KB, with crop and preview.",
 "icon": "KB",
-"page": "photo.html?preset=custom",
+"page": "/photo?preset=custom",
 "section": "",
 "set": {}
 },
@@ -72,7 +72,7 @@ const TOOL_CATALOG=[
 "title": "Upscale an image",
 "detail": "Enlarge a picture 2×, 3× or 4× with smooth interpolation and optional sharpening.",
 "icon": "↑",
-"page": "image-tools.html",
+"page": "/image-tools",
 "section": "image-editor",
 "set": {
 "sizePreset": "2x"
@@ -84,7 +84,7 @@ const TOOL_CATALOG=[
 "title": "Edit an image",
 "detail": "Adjust brightness, contrast and colour, rotate, crop to fit, and add a caption.",
 "icon": "✎",
-"page": "image-tools.html",
+"page": "/image-tools",
 "section": "image-editor",
 "set": {}
 },
@@ -94,7 +94,7 @@ const TOOL_CATALOG=[
 "title": "Social media & print sizes",
 "detail": "Crop to a square, story or post size in one step.",
 "icon": "▢",
-"page": "image-tools.html",
+"page": "/image-tools",
 "section": "image-editor",
 "set": {
 "sizePreset": "square"
@@ -106,7 +106,7 @@ const TOOL_CATALOG=[
 "title": "Remove an image background",
 "detail": "Cut out a person with AI, or remove a plain colour, and save a transparent PNG.",
 "icon": "BG",
-"page": "image-tools.html",
+"page": "/image-tools",
 "section": "background-remover",
 "set": {}
 },
@@ -116,7 +116,7 @@ const TOOL_CATALOG=[
 "title": "Read text from an image (OCR)",
 "detail": "Recognize English or Hindi text in a photo or scan and copy it.",
 "icon": "OCR",
-"page": "image-tools.html",
+"page": "/image-tools",
 "section": "image-ocr",
 "set": {}
 },
@@ -126,7 +126,7 @@ const TOOL_CATALOG=[
 "title": "Resize many images at once",
 "detail": "Resize up to 100 images and download them together as a ZIP.",
 "icon": "×N",
-"page": "image-tools.html",
+"page": "/image-tools",
 "section": "batch-image",
 "set": {}
 },
@@ -136,7 +136,7 @@ const TOOL_CATALOG=[
 "title": "Convert an image to JPG, PNG or WebP",
 "detail": "Change the format of a picture and keep its size.",
 "icon": "JPG",
-"page": "office-tools.html",
+"page": "/office-tools",
 "section": "file-converter",
 "set": {
 "convertTo": "jpg"
@@ -148,7 +148,7 @@ const TOOL_CATALOG=[
 "title": "Compress a PDF to a size limit",
 "detail": "Get a PDF under 100 KB, 200 KB or any limit your form asks for.",
 "icon": "PDF",
-"page": "pdf-compress.html",
+"page": "/pdf-compress",
 "section": "",
 "set": {}
 },
@@ -158,7 +158,7 @@ const TOOL_CATALOG=[
 "title": "Merge PDFs",
 "detail": "Combine several PDF files into one, in the order you choose.",
 "icon": "+",
-"page": "pdf-tools.html",
+"page": "/pdf-tools",
 "section": "merge",
 "set": {}
 },
@@ -168,7 +168,7 @@ const TOOL_CATALOG=[
 "title": "Reorder, delete & rotate pages",
 "detail": "Keep only the pages you want, put them in order and rotate them.",
 "icon": "↕",
-"page": "pdf-tools.html",
+"page": "/pdf-tools",
 "section": "organize",
 "set": {}
 },
@@ -178,7 +178,7 @@ const TOOL_CATALOG=[
 "title": "Split a PDF into single pages",
 "detail": "Save each chosen page as its own PDF file.",
 "icon": "✂",
-"page": "pdf-tools.html",
+"page": "/pdf-tools",
 "section": "organize",
 "set": {
 "splitMode": "separate"
@@ -190,7 +190,7 @@ const TOOL_CATALOG=[
 "title": "Images to PDF",
 "detail": "Turn JPG and PNG photos into one PDF in A4, Letter or image size.",
 "icon": "IMG",
-"page": "pdf-tools.html",
+"page": "/pdf-tools",
 "section": "images-to-pdf",
 "set": {}
 },
@@ -200,7 +200,7 @@ const TOOL_CATALOG=[
 "title": "PDF to images",
 "detail": "Save each page of a PDF as a JPG or PNG picture.",
 "icon": "JPG",
-"page": "pdf-tools.html",
+"page": "/pdf-tools",
 "section": "pdf-to-images",
 "set": {}
 },
@@ -210,7 +210,7 @@ const TOOL_CATALOG=[
 "title": "Sign, stamp & watermark a PDF",
 "detail": "Add a typed signature, note, stamp or watermark to pages.",
 "icon": "✍",
-"page": "pdf-tools.html",
+"page": "/pdf-tools",
 "section": "pdf-markup",
 "set": {}
 },
@@ -220,7 +220,7 @@ const TOOL_CATALOG=[
 "title": "Black out parts of a PDF",
 "detail": "Permanently hide sensitive areas so the text cannot be recovered.",
 "icon": "▮",
-"page": "pdf-tools.html",
+"page": "/pdf-tools",
 "section": "pdf-redact",
 "set": {}
 },
@@ -230,7 +230,7 @@ const TOOL_CATALOG=[
 "title": "Make a scanned PDF searchable",
 "detail": "Read text from scanned pages and save a searchable PDF or plain text.",
 "icon": "OCR",
-"page": "pdf-tools.html",
+"page": "/pdf-tools",
 "section": "pdf-ocr",
 "set": {}
 },
@@ -240,7 +240,7 @@ const TOOL_CATALOG=[
 "title": "Add or remove a PDF password",
 "detail": "Protect a PDF with a password, or unlock one you know the password for.",
 "icon": "🔒",
-"page": "pdf-tools.html",
+"page": "/pdf-tools",
 "section": "pdf-password",
 "set": {}
 },
@@ -250,7 +250,7 @@ const TOOL_CATALOG=[
 "title": "Convert a PDF to Word, Excel or PowerPoint",
 "detail": "Extract the text of a PDF into an editable file. Layout is not kept.",
 "icon": "DOC",
-"page": "pdf-tools.html",
+"page": "/pdf-tools",
 "section": "pdf-office-convert",
 "set": {}
 },
@@ -260,7 +260,7 @@ const TOOL_CATALOG=[
 "title": "Edit a Word document",
 "detail": "Open a .docx, edit its text, then save a clean .docx, print or save as PDF.",
 "icon": "DOC",
-"page": "office-tools.html",
+"page": "/office-tools",
 "section": "word-workbench",
 "set": {}
 },
@@ -270,7 +270,7 @@ const TOOL_CATALOG=[
 "title": "Compress a Word document",
 "detail": "Make a .docx file smaller without changing its content.",
 "icon": "↓",
-"page": "office-tools.html",
+"page": "/office-tools",
 "section": "docx-compress",
 "set": {}
 },
@@ -280,7 +280,7 @@ const TOOL_CATALOG=[
 "title": "Turn text into slides or PDF pages",
 "detail": "Paste text and export it as page images or a PDF.",
 "icon": "▤",
-"page": "office-tools.html",
+"page": "/office-tools",
 "section": "slide-tools",
 "set": {}
 },
@@ -290,7 +290,7 @@ const TOOL_CATALOG=[
 "title": "Clean, merge & convert spreadsheets",
 "detail": "Trim spaces, remove duplicate rows, combine files and save as XLSX, CSV, TSV or JSON.",
 "icon": "XLS",
-"page": "office-tools.html",
+"page": "/office-tools",
 "section": "sheet-workbench",
 "set": {}
 },
@@ -300,7 +300,7 @@ const TOOL_CATALOG=[
 "title": "Spreadsheet to PDF",
 "detail": "Turn a CSV or Excel table into a PDF table.",
 "icon": "PDF",
-"page": "office-tools.html",
+"page": "/office-tools",
 "section": "sheet-workbench",
 "set": {
 "sheetFormat": "pdf"
@@ -312,7 +312,7 @@ const TOOL_CATALOG=[
 "title": "Count and clean text",
 "detail": "Count words and characters, change case, remove blank lines and find and replace.",
 "icon": "Aa",
-"page": "text-tools.html",
+"page": "/text-tools",
 "section": "text-cleaner",
 "set": {}
 },
@@ -322,7 +322,7 @@ const TOOL_CATALOG=[
 "title": "JSON formatter & validator",
 "detail": "Format, minify and check JSON.",
 "icon": "{}",
-"page": "text-tools.html",
+"page": "/text-tools",
 "section": "json",
 "set": {}
 },
@@ -332,7 +332,7 @@ const TOOL_CATALOG=[
 "title": "URL & Base64 encoder",
 "detail": "Encode or decode text for links and data.",
 "icon": "64",
-"page": "text-tools.html",
+"page": "/text-tools",
 "section": "encoding",
 "set": {}
 },
@@ -342,7 +342,7 @@ const TOOL_CATALOG=[
 "title": "Compare two texts",
 "detail": "See what changed between two versions of a text.",
 "icon": "≠",
-"page": "text-tools.html",
+"page": "/text-tools",
 "section": "compare",
 "set": {}
 },
@@ -352,7 +352,7 @@ const TOOL_CATALOG=[
 "title": "Convert a file",
 "detail": "Change images, tables and text between common formats.",
 "icon": "⇄",
-"page": "office-tools.html",
+"page": "/office-tools",
 "section": "file-converter",
 "set": {}
 },
@@ -362,7 +362,7 @@ const TOOL_CATALOG=[
 "title": "Create or extract a ZIP file",
 "detail": "Pack files into a ZIP or open a ZIP and download its contents.",
 "icon": "ZIP",
-"page": "office-tools.html",
+"page": "/office-tools",
 "section": "zip-workbench",
 "set": {}
 },
@@ -372,7 +372,7 @@ const TOOL_CATALOG=[
 "title": "View or remove file metadata",
 "detail": "See what hidden details a photo, PDF or Word file carries, and save a clean copy.",
 "icon": "i",
-"page": "office-tools.html",
+"page": "/office-tools",
 "section": "metadata-cleaner",
 "set": {}
 },
@@ -382,7 +382,7 @@ const TOOL_CATALOG=[
 "title": "Check a file and its SHA-256 fingerprint",
 "detail": "See type, size and a fingerprint that proves a file has not changed.",
 "icon": "#",
-"page": "everyday-tools.html",
+"page": "/everyday-tools",
 "section": "file-info",
 "set": {}
 },
@@ -392,7 +392,7 @@ const TOOL_CATALOG=[
 "title": "Find duplicate files",
 "detail": "Compare files to find identical copies.",
 "icon": "≡",
-"page": "office-tools.html",
+"page": "/office-tools",
 "section": "duplicate-files",
 "set": {}
 },
@@ -402,7 +402,7 @@ const TOOL_CATALOG=[
 "title": "Unit converter",
 "detail": "Length, weight, temperature, time and data sizes.",
 "icon": "⇆",
-"page": "everyday-tools.html",
+"page": "/everyday-tools",
 "section": "converter",
 "set": {}
 },
@@ -412,7 +412,7 @@ const TOOL_CATALOG=[
 "title": "Percentage, discount & GST calculator",
 "detail": "Work out discounts, GST and price changes in rupees.",
 "icon": "%",
-"page": "everyday-tools.html",
+"page": "/everyday-tools",
 "section": "calculator",
 "set": {}
 },
@@ -422,7 +422,7 @@ const TOOL_CATALOG=[
 "title": "QR code generator",
 "detail": "Make a QR code for a link or text and download it.",
 "icon": "QR",
-"page": "everyday-tools.html",
+"page": "/everyday-tools",
 "section": "qr-generator",
 "set": {}
 },
@@ -432,7 +432,7 @@ const TOOL_CATALOG=[
 "title": "Password generator",
 "detail": "Create a strong random password on your device.",
 "icon": "***",
-"page": "everyday-tools.html",
+"page": "/everyday-tools",
 "section": "password-generator",
 "set": {}
 },
@@ -442,7 +442,7 @@ const TOOL_CATALOG=[
 "title": "Date & time helper",
 "detail": "Find days between dates and convert time zones.",
 "icon": "31",
-"page": "everyday-tools.html",
+"page": "/everyday-tools",
 "section": "date-time-tools",
 "set": {}
 },
@@ -452,7 +452,7 @@ const TOOL_CATALOG=[
 "title": "Colour picker & palette",
 "detail": "Inspect a colour and build matching shades.",
 "icon": "◐",
-"page": "everyday-tools.html",
+"page": "/everyday-tools",
 "section": "color-tools",
 "set": {}
 },
@@ -462,7 +462,7 @@ const TOOL_CATALOG=[
 "title": "Exam photo & signature resizer",
 "detail": "Pick your exam and get a photo or signature at the exact size, with a white background option.",
 "icon": "IMG",
-"page": "photo.html",
+"page": "/photo",
 "section": "",
 "set": {}
 },
@@ -472,7 +472,7 @@ const TOOL_CATALOG=[
 "title": "Upload guide for exams & applications",
 "detail": "Photo, signature, thumb and document rules, with links to official notices.",
 "icon": "?",
-"page": "application-prep.html",
+"page": "/application-prep",
 "section": "",
 "set": {}
 },
@@ -482,7 +482,7 @@ const TOOL_CATALOG=[
 "title": "Application document checklist",
 "detail": "Keep track of which files are ready for your application.",
 "icon": "✓",
-"page": "everyday-tools.html",
+"page": "/everyday-tools",
 "section": "application-checklist",
 "set": {}
 },
@@ -492,7 +492,7 @@ const TOOL_CATALOG=[
 "title": "Convert a video or audio file",
 "detail": "Change format to MP4, WebM, MKV, MOV, AVI, GIF, MP3, M4A, WAV, OGG or FLAC.",
 "icon": "⇄",
-"page": "media-tools.html",
+"page": "/media-tools",
 "section": "video-convert",
 "set": {}
 },
@@ -502,7 +502,7 @@ const TOOL_CATALOG=[
 "title": "Trim, join & compress a video",
 "detail": "Cut a clip, join clips and save a smaller WebM.",
 "icon": "▶",
-"page": "media-tools.html",
+"page": "/media-tools",
 "section": "video-tools",
 "set": {}
 },
@@ -512,7 +512,7 @@ const TOOL_CATALOG=[
 "title": "Trim or join audio",
 "detail": "Cut and join audio and export a WAV file.",
 "icon": "♪",
-"page": "media-tools.html",
+"page": "/media-tools",
 "section": "audio-tools",
 "set": {}
 },
@@ -522,7 +522,7 @@ const TOOL_CATALOG=[
 "title": "Extract sound from a video",
 "detail": "Save the audio of a video as a separate file.",
 "icon": "♫",
-"page": "media-tools.html",
+"page": "/media-tools",
 "section": "extract-audio",
 "set": {}
 }

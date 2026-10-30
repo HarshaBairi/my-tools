@@ -59,7 +59,7 @@
         key: "item-" + index,
         title: item.label,
         detail: "Capture this directly in the official form. A prepared image cannot replace a live-capture step.",
-        href: "application-prep.html#live-photo",
+        href: "/application-prep#live-photo",
         action: "Live photo guidance",
         freshness: "Capture in the official portal",
       };
@@ -69,7 +69,7 @@
         key: "item-" + index,
         title: item.label,
         detail: "Review the current document instructions and prepare the requested files.",
-        href: "application-prep.html#documents",
+        href: "/application-prep#documents",
         action: "Document guidance",
         freshness: "Check the current form",
       };
@@ -82,7 +82,7 @@
       key: "item-" + index,
       title: item.label,
       detail: specText(preset),
-      href: "photo.html?" + params.toString(),
+      href: "/photo?" + params.toString(),
       action: "Prepare file",
       freshness: isCurrent ? "Named cycle · checked " + preset.checked : "Confirm the active notice",
       source: (preset && preset.source) || exam.source || "",
@@ -138,9 +138,9 @@
 
     const taskList = el("div", "workspace-list");
     const tasks = exam.items.map((item, index) => taskFor(exam, item, index));
-    tasks.push(finalTask("documents", "Prepare required certificates and scans", "Check the form's PDF limits, then organize, rotate or compress only the documents it requests.", "pdf-tools.html", "Open PDF tools", "Check the current form"));
-    tasks.push(finalTask("review-files", "Review every prepared file", "Check each preview, format, dimensions and file size against the active instructions.", "application-prep.html", "Review submission guidance"));
-    tasks.push(finalTask("review-portal", "Follow the live application portal", "Use live capture there when requested, upload each file to the matching field and save the final confirmation.", "application-prep.html", "Final submission guide"));
+    tasks.push(finalTask("documents", "Prepare required certificates and scans", "Check the form's PDF limits, then organize, rotate or compress only the documents it requests.", "/pdf-tools", "Open PDF tools", "Check the current form"));
+    tasks.push(finalTask("review-files", "Review every prepared file", "Check each preview, format, dimensions and file size against the active instructions.", "/application-prep", "Review submission guidance"));
+    tasks.push(finalTask("review-portal", "Follow the live application portal", "Use live capture there when requested, upload each file to the matching field and save the final confirmation.", "/application-prep", "Final submission guide"));
 
     const count = el("p", "workspace-progress");
     count.setAttribute("aria-live", "polite");
@@ -176,7 +176,7 @@
         const body = "Please review the guidance for " + exam.name + ".\n\nOfficial source: " + exam.source + "\n\nSuggested correction:\n";
         report.href = "mailto:" + address + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
       } else {
-        report.href = "contact.html#contact-email";
+        report.href = "/contact#contact-email";
         report.setAttribute("aria-label", "Suggest a correction; contact email is not configured yet");
       }
       reference.appendChild(document.createTextNode(" · "));
