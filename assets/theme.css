@@ -360,3 +360,8 @@ body.focus .focus-bar{max-width:760px;margin-inline:auto}
 .all-tools-list li{display:flex;flex-direction:column;gap:5px;padding:13px;border:1px solid var(--line);border-radius:12px;background:var(--surface-soft)}
 .all-tools-list a{font-weight:700;color:var(--ink);text-decoration:underline;text-decoration-color:var(--brand);text-underline-offset:3px}
 .all-tools-list span{font-size:.88rem;line-height:1.45;color:var(--muted)}
+.share-section{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;margin:40px auto;padding:22px;border:1px solid var(--line);border-radius:var(--r);background:var(--surface)}
+.share-section h2{margin:7px 0;font-size:1.25rem;letter-spacing:-.03em}
+.share-section>div>p:last-child{margin:0;color:var(--muted);font-size:.88rem}
+.share-section #shareStatus{flex-basis:100%;margin:0}
+.share-section #shareStatus:empty{display:none}
