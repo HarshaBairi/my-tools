@@ -356,3 +356,7 @@ body.focus .utility-card:not(.is-focus){display:none}
 body.focus .utility-grid{grid-template-columns:minmax(0,760px);justify-content:center}
 body.focus .utility-card.is-focus .step-heading{display:none}
 body.focus .focus-bar{max-width:760px;margin-inline:auto}
+.all-tools-list{list-style:none;padding:0;margin:1rem 0 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:10px}
+.all-tools-list li{display:flex;flex-direction:column;gap:5px;padding:13px;border:1px solid var(--line);border-radius:12px;background:var(--surface-soft)}
+.all-tools-list a{font-weight:700;color:var(--ink);text-decoration:underline;text-decoration-color:var(--brand);text-underline-offset:3px}
+.all-tools-list span{font-size:.88rem;line-height:1.45;color:var(--muted)}
